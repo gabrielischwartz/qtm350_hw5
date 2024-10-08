@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "HW2"
+  title: "HW5"
   navbar:
     top:
     - text: Home
@@ -18,7 +18,7 @@ format:
     theme: flatly
     css: styles.css
     toc: true
-    output-file: index.html
+    output-file: index.qmd
   revealjs:
     theme: moon
     slideNumber: true
