@@ -8,16 +8,16 @@ date: "2024-10-7"
 
 format:
   html:
-    input: index.qmd         
+    input: indexg.qmd         
     output-file: hw5_report.html
 
   pdf:
     input: index.qmd        
     output-file: hw5_report.pdf
 
-  revealjs:
-    input: presentation.qmd  
-    output-file: hw5_presentation.html
+  # revealjs:
+  #   input: presentation.qmd  
+  #   output-file: hw5_presentation.html
 
 
 
