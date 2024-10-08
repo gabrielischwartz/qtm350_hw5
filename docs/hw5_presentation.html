@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="presentation_files/libs/clipboard/clipboard.min.js"></script>
-<script src="presentation_files/libs/quarto-html/tabby.min.js"></script>
-<script src="presentation_files/libs/quarto-html/popper.min.js"></script>
-<script src="presentation_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="presentation_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="presentation_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="presentation_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="presentation_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/tabby.min.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Gabe Schwartz">
   <meta name="dcterms.date" content="2024-10-07">
-  <title>HW5 Presentation</title>
+  <title>HW5</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="presentation_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="presentation_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -31,11 +31,11 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="presentation_files/libs/revealjs/dist/theme/quarto.css">
-  <link href="presentation_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="presentation_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="presentation_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="presentation_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css">
+  <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -321,13 +321,16 @@
       margin-right: 0; 
     }
   </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+  
+  <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 </head>
-<body class="quarto-dark">
+<body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">HW5 Presentation</h1>
+  <h1 class="title">HW5</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -339,70 +342,495 @@ Gabe Schwartz
 
   <p class="date">2024-10-07</p>
 </section>
-<section id="inflation" class="title-slide slide level1 center">
-<h1>Inflation</h1>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div style="text-align: center;">
-<h3>
-Analysis
-</h3>
-</div>
-<div style="font-size: 0.8em;">
-<p>The top 5 countries with the highest inflation rates are Lebanon, Sudan, Zimbabwe, Turkiye, and Suriname, with Lebanon experiencing the highest rate at 171.21%. This is a lot more than the mean of 12.49%. Conversely, the countries with the lowest inflation rates include Hong Kong SAR, China; Bolivia; Benin; Macao SAR, China; and South Sudan, with South Sudan having a deflation rate of -6.69%.</p>
-</div>
-</div><div class="column" style="width:50%;">
-<div style="text-align: center;">
-<h3>
-Graph
-</h3>
-</div>
-<p><img data-src="images/top_10_inflation.png" width="600" height="400"></p>
-</div></div>
-</section>
+<section id="inflation-rate" class="slide level2">
+<h2>Inflation Rate</h2>
+<h4 id="table-1-inflation-key-stats">Table 1: Inflation Key Stats</h4>
+<!-- Table: key-stats -->
+<div id="9c5abc3a" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display" data-execution_count="19">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<section id="gdp-growth" class="title-slide slide level1 center">
-<h1>GDP Growth</h1>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div style="text-align: center;">
-<h3>
-Analysis
-</h3>
-</div>
-<div style="font-size: 0.8em;">
-<p>The top 5 countries with the highest GDP growth rates are Guyana, Fiji, St.&nbsp;Lucia, Cabo Verde, and Seychelles, with Guyana experiencing the highest growth rate at 63.44%. Conversely, the countries with the lowest GDP growth rates include Afghanistan, Sri Lanka, Timor-Leste, Macao SAR, China, and Ukraine, with Ukraine having the lowest growth rate at -28.76%. Most countries have a GDP growth rate between 0% and 20%.</p>
-</div>
-</div><div class="column" style="width:50%;">
-<div style="text-align: center;">
-<h3>
-Graph
-</h3>
-</div>
-<p><img data-src="images/gdp_violinchart.png" width="600" height="400"></p>
-</div></div>
-</section>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
 
-<section id="primary-school-enrollment" class="title-slide slide level1 center">
-<h1>Primary School Enrollment</h1>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div style="text-align: center;">
-<h3>
-Analysis
-</h3>
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+
+<table class="dataframe caption-top" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header" style="text-align: right;">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">country</th>
+<th data-quarto-table-cell-role="th">inflation_rate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>Lebanon</td>
+<td>171.205491</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>Sudan</td>
+<td>138.808460</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>Zimbabwe</td>
+<td>104.705171</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>Turkiye</td>
+<td>72.308836</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>Suriname</td>
+<td>52.446027</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">164</td>
+<td>Hong Kong SAR, China</td>
+<td>1.881367</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">165</td>
+<td>Bolivia</td>
+<td>1.746329</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">166</td>
+<td>Benin</td>
+<td>1.350779</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">167</td>
+<td>Macao SAR, China</td>
+<td>1.045028</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">168</td>
+<td>South Sudan</td>
+<td>-6.687321</td>
+</tr>
+</tbody>
+</table>
+
 </div>
-<div style="font-size: 0.8em;">
-<p>The top 5 countries with the highest primary school enrollment rates are Madagascar, Rwanda, Namibia, Gibraltar, and Malawi, with Madagascar having the highest rate at 138.19%. These 5 countries all have similar rates. Conversely, the countries with the lowest primary school enrollment rates include Senegal, Burkina Faso, Syrian Arab Republic, Niger, and Djibouti, with Djibouti having the lowest rate at 64.40%.</p>
 </div>
-</div><div class="column" style="width:50%;">
-<div style="text-align: center;">
-<h3>
-Graph
-</h3>
 </div>
-<p><img data-src="images/top_10_schooling.png" width="600" height="400"></p>
-</div></div>
+<h4 id="figure-1-inflation-bar-chart">Figure 1: Inflation Bar Chart</h4>
+<!-- Figure: inflation-bar-chart -->
+<div id="99609b68" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<div>
+<figure>
+<p><img data-src="index_files/figure-revealjs/cell-3-output-1.png" width="965" height="749"></p>
+</figure>
+</div>
+</div>
+</div>
+<h4 id="table-2-inflation-summary-statistics">Table 2: Inflation Summary Statistics</h4>
+<!-- Table: inflation-summary-stats -->
+<div id="0c7d0eec" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+
+<table class="dataframe caption-top" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header" style="text-align: right;">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">inflation_rate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">count</td>
+<td>169.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">mean</td>
+<td>12.493936</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">std</td>
+<td>19.682433</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">min</td>
+<td>-6.687321</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">25%</td>
+<td>5.518129</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">50%</td>
+<td>7.967574</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">75%</td>
+<td>11.665567</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">max</td>
+<td>171.205491</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p>As shown in <strong>Table 1</strong> in The top 5 countries with the highest inflation rates are Lebanon, Sudan, Zimbabwe, Turkiye, and Suriname, with Lebanon experiencing the highest rate at 171.21%. This is a lot more than the mean of 12.49% which can be seen in <strong>Table 2</strong> Conversely, the countries with the lowest inflation rates include Hong Kong SAR, China; Bolivia; Benin; Macao SAR, China; and South Sudan, with South Sudan having a deflation rate of -6.69%.</p>
+</section>
+<section id="gdp-growth-rate" class="slide level2">
+<h2>GDP Growth Rate</h2>
+<h4 id="table-3-gdp-growth-key-stats">Table 3: GDP Growth Key Stats</h4>
+<!-- Table: gdp-key-stats -->
+<div id="e4c825d3" class="cell" data-execution_count="4">
+<div class="cell-output cell-output-display" data-execution_count="22">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+
+<table class="dataframe caption-top" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header" style="text-align: right;">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">country</th>
+<th data-quarto-table-cell-role="th">gdp_growth_rate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>Guyana</td>
+<td>63.439864</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>Fiji</td>
+<td>20.016464</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>St. Lucia</td>
+<td>18.075380</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>Cabo Verde</td>
+<td>17.439079</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>Seychelles</td>
+<td>14.976851</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">197</td>
+<td>Afghanistan</td>
+<td>-6.240172</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">198</td>
+<td>Sri Lanka</td>
+<td>-7.346764</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">199</td>
+<td>Timor-Leste</td>
+<td>-20.541587</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">200</td>
+<td>Macao SAR, China</td>
+<td>-21.401951</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">201</td>
+<td>Ukraine</td>
+<td>-28.758591</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<h4 id="figure-2-gdp-growth-violin-chart">Figure 2: GDP Growth Violin Chart</h4>
+<!-- Figure: gdp-violin-chart -->
+<div id="844d59ef" class="cell" data-execution_count="5">
+<div class="cell-output cell-output-display">
+<div>
+<figure>
+<p><img data-src="index_files/figure-revealjs/cell-6-output-1.png" width="917" height="671"></p>
+</figure>
+</div>
+</div>
+</div>
+<h4 id="table-4-gdp-growth-summary-statistics">Table 4: GDP Growth Summary Statistics</h4>
+<!-- Table: gdp-summary-stats -->
+<div id="aa3aaf66" class="cell" data-execution_count="6">
+<div class="cell-output cell-output-display">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+
+<table class="dataframe caption-top" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header" style="text-align: right;">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">gdp_growth_rate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">count</td>
+<td>202.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">mean</td>
+<td>4.368901</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">std</td>
+<td>6.626811</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">min</td>
+<td>-28.758591</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">25%</td>
+<td>2.438593</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">50%</td>
+<td>4.204431</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">75%</td>
+<td>6.200000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">max</td>
+<td>63.439864</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p>In <strong>Table 1</strong> it can be seen that the top 5 countries with the highest GDP growth rates are Guyana, Fiji, St.&nbsp;Lucia, Cabo Verde, and Seychelles, with Guyana experiencing the highest growth rate at 63.44%. Conversely, the countries with the lowest GDP growth rates include Afghanistan, Sri Lanka, Timor-Leste, Macao SAR, China, and Ukraine, with Ukraine having the lowest growth rate at -28.76%. Most countries have a GDP growth rate between 0% and 20% as can be seen in <strong>Figure 2</strong>.</p>
+<h3 id="primary-school-enrollment-rate">Primary School Enrollment Rate</h3>
+<h4 id="table-5-primary-school-enrollment-key-stats">Table 5: Primary School Enrollment Key Stats</h4>
+<!-- Table: primary-key-stats -->
+<div id="5fb4cae4" class="cell" data-execution_count="7">
+<div class="cell-output cell-output-display" data-execution_count="25">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+
+<table class="dataframe caption-top" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header" style="text-align: right;">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">country</th>
+<th data-quarto-table-cell-role="th">primary_school_enrolment_rate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>Madagascar</td>
+<td>138.192001</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>Rwanda</td>
+<td>134.930344</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>Namibia</td>
+<td>132.985992</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>Gibraltar</td>
+<td>127.165352</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>Malawi</td>
+<td>126.438004</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">109</td>
+<td>Senegal</td>
+<td>83.278702</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">110</td>
+<td>Burkina Faso</td>
+<td>82.356796</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">111</td>
+<td>Syrian Arab Republic</td>
+<td>74.367432</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">112</td>
+<td>Niger</td>
+<td>68.331413</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">113</td>
+<td>Djibouti</td>
+<td>64.395401</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<h4 id="figure-3-primary-school-enrollment-bar-chart">Figure 3: Primary School Enrollment Bar Chart</h4>
+<!-- Figure: primary-bar-chart -->
+<div id="22fdae5e" class="cell" data-execution_count="8">
+<div class="cell-output cell-output-display">
+<div>
+<figure>
+<p><img data-src="index_files/figure-revealjs/cell-9-output-1.png" width="965" height="782"></p>
+</figure>
+</div>
+</div>
+</div>
+<h4 id="primary-school-enrollment-summary-statistics">Primary School Enrollment Summary Statistics</h4>
+<!-- Table: primary-summary-stats -->
+<div id="460433b0" class="cell" data-execution_count="9">
+<div class="cell-output cell-output-display">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+
+<table class="dataframe caption-top" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header" style="text-align: right;">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">primary_school_enrolment_rate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">count</td>
+<td>114.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">mean</td>
+<td>100.874048</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">std</td>
+<td>12.037532</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">min</td>
+<td>64.395401</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">25%</td>
+<td>94.191751</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">50%</td>
+<td>100.022247</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">75%</td>
+<td>105.035866</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">max</td>
+<td>138.192001</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p>In <strong>Table 5</strong> it can be seen that the top 5 countries with the highest primary school enrollment rates are Madagascar, Rwanda, Namibia, Gibraltar, and Malawi, with Madagascar having the highest rate at 138.19%. These all have similar rates which is visible in <strong>Figure 3</strong>. Conversely, the countries with the lowest primary school enrollment rates include Senegal, Burkina Faso, Syrian Arab Republic, Niger, and Djibouti, with Djibouti having the lowest rate at 64.40%.</p>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
@@ -413,19 +841,19 @@ Graph
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="presentation_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="index_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="presentation_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="presentation_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="presentation_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="presentation_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="presentation_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="presentation_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="presentation_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="presentation_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="presentation_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="index_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="index_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="index_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="index_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -565,7 +993,7 @@ Graph
         previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'fade',
+        transition: 'none',
 
         // Transition speed (default/fast/slow)
         transitionSpeed: 'default',
