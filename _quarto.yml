@@ -1,31 +1,37 @@
 project:
   type: website
-  output-dir: docs
+  output-dir: docs  # Ensure files are output to the docs folder for GitHub Pages
 
 website:
   title: "HW5"
   navbar:
     top:
     - text: Home
-      href: index.html   # Change to the rendered index.html
+      href: index.html  # Ensure it links to index.html
     - text: Report
-      href: report.html  # Link to the rendered report.html
+      href: report.html  # Ensure it links to report.html
     - text: Slides
-      href: presentation.html  # Link to the rendered Reveal.js presentation
+      href: presentation.html  # Ensure it links to the reveal.js presentation
 
-format:
-  html:
-    theme: flatly
-    css: styles.css
-    toc: true
-    output-file: index.html  # Ensure this outputs index.qmd as index.html
-  revealjs:
-    theme: moon
-    slideNumber: true
-    transition: fade
-    output-file: presentation.html  # Output presentation.qmd as presentation.html
+index.qmd:
+  format:
+    html:
+      theme: flatly
+      css: styles.css
+      toc: true
+      output-file: index.html  # This ensures index.qmd renders to index.html
+
+presentation.qmd:
+  format:
+    revealjs:
+        theme: moon
+        slideNumber: true
+        transition: fade
+        output-file: presentation.html  # Ensure presentation.qmd renders to presentation.html
 
 report.qmd:
   format:
-    html: default  # Ensure report.qmd renders as report.html
-    pdf: default
+    html:
+      output-file: report.html  # Ensure report.qmd outputs to report.html
+    pdf: 
+      output-file: report.pdf
