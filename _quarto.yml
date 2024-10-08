@@ -8,11 +8,11 @@ date: "2024-10-7"
 
 format:
   html:
-    input: hw5.qmd         
+    input: index.qmd         
     output-file: hw5_report.html
 
   pdf:
-    input: hw5.qmd        
+    input: index.qmd        
     output-file: hw5_report.pdf
 
   revealjs:
