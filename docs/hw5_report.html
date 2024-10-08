@@ -76,10 +76,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="fullcontent">
+<body>
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="hw5_report.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="hw5_presentation.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></div>
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -118,7 +119,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="table-1-inflation-key-stats" class="level4">
 <h4 class="anchored" data-anchor-id="table-1-inflation-key-stats">Table 1: Inflation Key Stats</h4>
 <!-- Table: key-stats -->
-<div id="ea38ed06" class="cell" data-execution_count="1">
+<div id="69d56283" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
@@ -136,7 +137,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>inf_bottom_5 <span class="op">=</span> inflation.tail()</span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>inflation_stats <span class="op">=</span> pd.concat([inf_top_5, inf_bottom_5])</span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>inflation_stats</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="1">
+<div class="cell-output cell-output-display" data-execution_count="208">
 <div>
 
 
@@ -209,7 +210,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="figure-1-inflation-bar-chart" class="level4">
 <h4 class="anchored" data-anchor-id="figure-1-inflation-bar-chart">Figure 1: Inflation Bar Chart</h4>
 <!-- Figure: inflation-bar-chart -->
-<div id="550b2859" class="cell" data-execution_count="2">
+<div id="0dfed458" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>top_10_inflation <span class="op">=</span> inflation.head(<span class="dv">10</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">8</span>))</span>
@@ -234,7 +235,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="table-2-inflation-summary-statistics" class="level4">
 <h4 class="anchored" data-anchor-id="table-2-inflation-summary-statistics">Table 2: Inflation Summary Statistics</h4>
 <!-- Table: inflation-summary-stats -->
-<div id="c6819f2b" class="cell" data-execution_count="3">
+<div id="a3e5d742" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>inf_summary_stats <span class="op">=</span> inflation[<span class="st">'inflation_rate'</span>].describe()</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>display(pd.DataFrame(inf_summary_stats))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -296,7 +297,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="table-3-gdp-growth-key-stats" class="level4">
 <h4 class="anchored" data-anchor-id="table-3-gdp-growth-key-stats">Table 3: GDP Growth Key Stats</h4>
 <!-- Table: gdp-key-stats -->
-<div id="fc1d72ca" class="cell" data-execution_count="4">
+<div id="bbe99a92" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>gdp_growth <span class="op">=</span> wdi[[<span class="st">'country'</span>,<span class="st">'gdp_growth_rate'</span>]].copy()</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>gdp_growth.dropna(inplace<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -309,7 +310,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>gdp_tail <span class="op">=</span> gdp_growth.tail()</span>
 <span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>gdp_stats <span class="op">=</span> pd.concat([gdp_head, gdp_tail])</span>
 <span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>gdp_stats</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="4">
+<div class="cell-output cell-output-display" data-execution_count="211">
 <div>
 
 
@@ -382,7 +383,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="figure-2-gdp-growth-violin-chart" class="level4">
 <h4 class="anchored" data-anchor-id="figure-2-gdp-growth-violin-chart">Figure 2: GDP Growth Violin Chart</h4>
 <!-- Figure: gdp-violin-chart -->
-<div id="bed29459" class="cell" data-execution_count="5">
+<div id="1e4b29bf" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">8</span>))</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>sns.violinplot(x<span class="op">=</span>gdp_growth[<span class="st">'gdp_growth_rate'</span>])</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'GDP Growth Rate'</span>)</span>
@@ -401,7 +402,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="table-4-gdp-growth-summary-statistics" class="level4">
 <h4 class="anchored" data-anchor-id="table-4-gdp-growth-summary-statistics">Table 4: GDP Growth Summary Statistics</h4>
 <!-- Table: gdp-summary-stats -->
-<div id="d85fa7d9" class="cell" data-execution_count="6">
+<div id="2ced0426" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>growth_summary_stats <span class="op">=</span> gdp_growth[<span class="st">'gdp_growth_rate'</span>].describe()</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>display(pd.DataFrame(growth_summary_stats))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -462,7 +463,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="table-5-primary-school-enrollment-key-stats" class="level4">
 <h4 class="anchored" data-anchor-id="table-5-primary-school-enrollment-key-stats">Table 5: Primary School Enrollment Key Stats</h4>
 <!-- Table: primary-key-stats -->
-<div id="9746ef8f" class="cell" data-execution_count="7">
+<div id="61f5df22" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>schooling <span class="op">=</span> wdi[[<span class="st">'country'</span>,<span class="st">'primary_school_enrolment_rate'</span>]].copy()</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>schooling.dropna(inplace<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>schooling.sort_values(by<span class="op">=</span><span class="st">'primary_school_enrolment_rate'</span>, ascending<span class="op">=</span><span class="va">False</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
@@ -475,7 +476,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>school_stats <span class="op">=</span> pd.concat([school_top5, school_bottom5])</span>
 <span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>school_stats</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="7">
+<div class="cell-output cell-output-display" data-execution_count="214">
 <div>
 
 
@@ -548,7 +549,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="figure-3-primary-school-enrollment-bar-chart" class="level4">
 <h4 class="anchored" data-anchor-id="figure-3-primary-school-enrollment-bar-chart">Figure 3: Primary School Enrollment Bar Chart</h4>
 <!-- Figure: primary-bar-chart -->
-<div id="7484cefe" class="cell" data-execution_count="8">
+<div id="6c7c1f27" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>top_10_schooling <span class="op">=</span> schooling.head(<span class="dv">10</span>)</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">8</span>))</span>
@@ -573,7 +574,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="primary-school-enrollment-summary-statistics" class="level4">
 <h4 class="anchored" data-anchor-id="primary-school-enrollment-summary-statistics">Primary School Enrollment Summary Statistics</h4>
 <!-- Table: primary-summary-stats -->
-<div id="eb63b12b" class="cell" data-execution_count="9">
+<div id="2f896b83" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>school_summary_stats <span class="op">=</span> schooling[<span class="st">'primary_school_enrolment_rate'</span>].describe()</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>display(pd.DataFrame(school_summary_stats))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
