@@ -7,25 +7,25 @@ website:
   navbar:
     top:
     - text: Home
-      href: index.qmd
+      href: index.html   # Change to the rendered index.html
     - text: Report
-      href: report.qmd
+      href: report.html  # Link to the rendered report.html
     - text: Slides
-      href: presentation.qmd
+      href: presentation.html  # Link to the rendered Reveal.js presentation
 
 format:
   html:
     theme: flatly
     css: styles.css
     toc: true
-    output-file: index.qmd
+    output-file: index.html  # Ensure this outputs index.qmd as index.html
   revealjs:
     theme: moon
     slideNumber: true
     transition: fade
-
+    output-file: presentation.html  # Output presentation.qmd as presentation.html
 
 report.qmd:
   format:
-    html: default
+    html: default  # Ensure report.qmd renders as report.html
     pdf: default

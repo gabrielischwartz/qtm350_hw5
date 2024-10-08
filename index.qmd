@@ -1,3 +1,4 @@
+
 ---
 title: "HW5"
 format: html
@@ -7,5 +8,3 @@ format: html
 - [Home](index.qmd)
 - [Report](report.qmd)
 - [Slides](presentation.qmd)
-
-

@@ -141,3 +141,5 @@ display(pd.DataFrame(school_summary_stats))
 ```
 
 In **Table 5** it can be seen that the top 5 countries with the highest primary school enrollment rates are Madagascar, Rwanda, Namibia, Gibraltar, and Malawi, with Madagascar having the highest rate at 138.19%. These all have similar rates which is visible in **Figure 3**. Conversely, the countries with the lowest primary school enrollment rates include Senegal, Burkina Faso, Syrian Arab Republic, Niger, and Djibouti, with Djibouti having the lowest rate at 64.40%.
+
+
