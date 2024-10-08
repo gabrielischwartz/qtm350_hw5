@@ -7,11 +7,11 @@ website:
   navbar:
     top:
     - text: Home
-      href: index.html
+      href: index.qmd
     - text: Report
-      href: report.html
+      href: report.qmd
     - text: Slides
-      href: presentation.html
+      href: presentation.qmd
 
 format:
   html:
