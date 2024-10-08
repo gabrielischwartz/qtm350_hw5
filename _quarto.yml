@@ -18,6 +18,7 @@ format:
     theme: flatly
     css: styles.css
     toc: true
+    output-file: index.html
   revealjs:
     theme: moon
     slideNumber: true
