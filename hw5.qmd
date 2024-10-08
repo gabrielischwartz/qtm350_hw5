@@ -1,0 +1,143 @@
+---
+title: "HW5"
+---
+
+## Inflation Rate
+
+#### Table 1: Inflation Key Stats
+<!-- Table: key-stats -->
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+wdi = pd.read_csv('../wdi.csv')
+
+inflation = wdi[['country','inflation_rate']].copy()
+inflation.dropna(inplace=True)
+
+inflation.sort_values(by='inflation_rate', ascending=False, inplace=True)
+
+inflation.reset_index(drop=True, inplace=True)
+
+inf_top_5 = inflation.head()
+inf_bottom_5 = inflation.tail()
+inflation_stats = pd.concat([inf_top_5, inf_bottom_5])
+inflation_stats
+```
+
+#### Figure 1: Inflation Bar Chart
+<!-- Figure: inflation-bar-chart -->
+```{python}
+top_10_inflation = inflation.head(10)
+
+plt.figure(figsize=(12, 8))
+plt.bar(top_10_inflation['country'], top_10_inflation['inflation_rate'], color='skyblue')
+plt.xlabel('Country')
+plt.ylabel('Inflation Rate')
+plt.title('Top 10 Countries with Highest Inflation Rate')
+plt.xticks(rotation=45)
+
+plt.savefig('images/top_10_inflation.png')
+
+plt.show()
+```
+
+#### Table 2: Inflation Summary Statistics 
+<!-- Table: inflation-summary-stats -->
+```{python}
+inf_summary_stats = inflation['inflation_rate'].describe()
+
+display(pd.DataFrame(inf_summary_stats))
+```
+
+As shown in **Table 1** in The top 5 countries with the highest inflation rates are Lebanon, Sudan, Zimbabwe, Turkiye, and Suriname, with Lebanon experiencing the highest rate at 171.21%. This is a lot more than the mean of 12.49% which can be seen in **Table 2** Conversely, the countries with the lowest inflation rates include Hong Kong SAR, China; Bolivia; Benin; Macao SAR, China; and South Sudan, with South Sudan having a deflation rate of -6.69%. 
+
+
+
+## GDP Growth Rate
+
+#### Table 3: GDP Growth Key Stats
+<!-- Table: gdp-key-stats -->
+```{python}
+gdp_growth = wdi[['country','gdp_growth_rate']].copy()
+gdp_growth.dropna(inplace=True)
+
+gdp_growth.sort_values(by='gdp_growth_rate', ascending=False, inplace=True)
+
+gdp_growth.reset_index(drop=True, inplace=True)
+
+gdp_head = gdp_growth.head()
+
+gdp_tail = gdp_growth.tail()
+gdp_stats = pd.concat([gdp_head, gdp_tail])
+gdp_stats
+
+```
+
+#### Figure 2: GDP Growth Violin Chart
+<!-- Figure: gdp-violin-chart -->
+```{python}
+plt.figure(figsize=(12, 8))
+sns.violinplot(x=gdp_growth['gdp_growth_rate'])
+plt.xlabel('GDP Growth Rate')
+plt.title('Distribution of GDP Growth Rates')
+plt.savefig('images/gdp_violinchart.png')
+plt.show()
+```
+
+#### Table 4: GDP Growth Summary Statistics
+<!-- Table: gdp-summary-stats -->
+```{python}
+growth_summary_stats = gdp_growth['gdp_growth_rate'].describe()
+
+display(pd.DataFrame(growth_summary_stats))
+```
+
+In **Table 1** it can be seen that the top 5 countries with the highest GDP growth rates are Guyana, Fiji, St. Lucia, Cabo Verde, and Seychelles, with Guyana experiencing the highest growth rate at 63.44%. Conversely, the countries with the lowest GDP growth rates include Afghanistan, Sri Lanka, Timor-Leste, Macao SAR, China, and Ukraine, with Ukraine having the lowest growth rate at -28.76%. Most countries have a GDP growth rate between 0% and 20% as can be seen in **Figure 2**.
+
+### Primary School Enrollment Rate
+#### Table 5: Primary School Enrollment Key Stats
+<!-- Table: primary-key-stats -->
+```{python}
+
+schooling = wdi[['country','primary_school_enrolment_rate']].copy()
+schooling.dropna(inplace=True)
+schooling.sort_values(by='primary_school_enrolment_rate', ascending=False, inplace=True)
+
+schooling.reset_index(drop=True, inplace=True)
+
+school_top5 = schooling.head()
+
+school_bottom5 = schooling.tail()
+
+school_stats = pd.concat([school_top5, school_bottom5])
+school_stats
+```
+
+#### Figure 3: Primary School Enrollment Bar Chart
+<!-- Figure: primary-bar-chart -->
+```{python}
+top_10_schooling = schooling.head(10)
+
+plt.figure(figsize=(12, 8))
+plt.bar(top_10_schooling['country'], top_10_schooling['primary_school_enrolment_rate'], color='skyblue')
+plt.xlabel('Country')
+plt.ylabel('Primary School Enrolment Rate')
+plt.title('Top 10 Countries with Highest Primary School Enrolment Rate')
+plt.xticks(rotation=45)
+
+plt.savefig('images/top_10_schooling.png')
+
+plt.show()
+```
+
+#### Primary School Enrollment Summary Statistics
+<!-- Table: primary-summary-stats -->
+```{python}
+school_summary_stats = schooling['primary_school_enrolment_rate'].describe()
+
+display(pd.DataFrame(school_summary_stats))
+```
+
+In **Table 5** it can be seen that the top 5 countries with the highest primary school enrollment rates are Madagascar, Rwanda, Namibia, Gibraltar, and Malawi, with Madagascar having the highest rate at 138.19%. These all have similar rates which is visible in **Figure 3**. Conversely, the countries with the lowest primary school enrollment rates include Senegal, Burkina Faso, Syrian Arab Republic, Niger, and Djibouti, with Djibouti having the lowest rate at 64.40%.

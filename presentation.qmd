@@ -1,0 +1,75 @@
+---
+title: "HW5 Presentation"
+author: "Gabe Schwartz"
+date: "2024-10-07"
+format: 
+    revealjs:
+        theme: moon
+        transition: fade
+---
+
+# Inflation 
+
+::: {.columns}
+::: {.column width="50%"}
+<div style="text-align: center;">
+<h3>Analysis</h3>
+</div>
+
+<div style="font-size: 0.8em;">
+The top 5 countries with the highest inflation rates are Lebanon, Sudan, Zimbabwe, Turkiye, and Suriname, with Lebanon experiencing the highest rate at 171.21%. This is a lot more than the mean of 12.49%. Conversely, the countries with the lowest inflation rates include Hong Kong SAR, China; Bolivia; Benin; Macao SAR, China; and South Sudan, with South Sudan having a deflation rate of -6.69%. 
+</div>
+:::
+
+::: {.column width="50%"}
+<div style="text-align: center;">
+<h3>Graph</h3>
+</div>
+
+![](images/top_10_inflation.png){width=600 height=400}
+:::
+:::
+
+# GDP Growth
+
+::: {.columns}
+::: {.column width="50%"}
+<div style="text-align: center;">
+<h3>Analysis</h3>
+</div>
+
+<div style="font-size: 0.8em;">
+The top 5 countries with the highest GDP growth rates are Guyana, Fiji, St. Lucia, Cabo Verde, and Seychelles, with Guyana experiencing the highest growth rate at 63.44%. Conversely, the countries with the lowest GDP growth rates include Afghanistan, Sri Lanka, Timor-Leste, Macao SAR, China, and Ukraine, with Ukraine having the lowest growth rate at -28.76%. Most countries have a GDP growth rate between 0% and 20%.
+</div>
+:::
+
+::: {.column width="50%"}
+<div style="text-align: center;">
+<h3>Graph</h3>
+</div>
+
+![](images/gdp_violinchart.png){width=600 height=400}
+:::
+:::
+
+# Primary School Enrollment 
+
+::: {.columns}
+::: {.column width="50%"}
+<div style="text-align: center;">
+<h3>Analysis</h3>
+</div>
+
+<div style="font-size: 0.8em;">
+The top 5 countries with the highest primary school enrollment rates are Madagascar, Rwanda, Namibia, Gibraltar, and Malawi, with Madagascar having the highest rate at 138.19%. These 5 countries all have similar rates. Conversely, the countries with the lowest primary school enrollment rates include Senegal, Burkina Faso, Syrian Arab Republic, Niger, and Djibouti, with Djibouti having the lowest rate at 64.40%.
+</div>
+:::
+
+::: {.column width="50%"}
+<div style="text-align: center;">
+<h3>Graph</h3>
+</div>
+
+![](images/top_10_schooling.png){width=600 height=400}
+:::
+:::

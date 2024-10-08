@@ -1,0 +1,16 @@
+project:
+  title: "hw5"
+
+bibliography: references.bib
+author: "Gabe Schwartz"
+date: "2024-10-7"
+
+output:
+    html: default
+    pdf: default
+    revealjs: default
+    
+
+
+
+
