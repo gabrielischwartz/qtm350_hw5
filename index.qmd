@@ -7,4 +7,6 @@ format: html
 # Pages
 - [Home](index.qmd)
 - [Report](report.qmd)
+- [Report PDF](docs/report.pdf)
 - [Slides](presentation.qmd)
+

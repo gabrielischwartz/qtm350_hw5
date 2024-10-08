@@ -5,13 +5,13 @@ project:
 website:
   title: "HW5"
   navbar:
-    top:
-    - text: Home
-      href: index.html  # Ensure it links to index.html
-    - text: Report
-      href: report.html  # Ensure it links to report.html
-    - text: Slides
-      href: presentation.html  # Ensure it links to the reveal.js presentation
+    left:
+      - text: Home
+        href: index.qmd  
+      - text: Report
+        href: report.qmd  
+      - text: Slides
+        href: presentation.qmd  
 
 index.qmd:
   format:
