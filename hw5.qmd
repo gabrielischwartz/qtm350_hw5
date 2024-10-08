@@ -11,7 +11,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-wdi = pd.read_csv('../wdi.csv')
+wdi = pd.read_csv('wdi.csv')
 
 inflation = wdi[['country','inflation_rate']].copy()
 inflation.dropna(inplace=True)
