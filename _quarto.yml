@@ -1,23 +1,30 @@
 project:
-  title: "hw5"
+  type: website
   output-dir: docs
 
-bibliography: references.bib
-author: "Gabe Schwartz"
-date: "2024-10-7"
+website:
+  title: "HW2"
+  navbar:
+    top:
+    - text: Home
+      href: index.qmd
+    - text: Report
+      href: report.qmd
+    - text: Slides
+      href: presentation.qmd
 
 format:
   html:
-    input: indexg.qmd         
-    output-file: hw5_report.html
-
-  pdf:
-    input: index.qmd        
-    output-file: hw5_report.pdf
-
-  # revealjs:
-  #   input: presentation.qmd  
-  #   output-file: hw5_presentation.html
+    theme: flatly
+    css: styles.css
+    toc: true
+  revealjs:
+    theme: moon
+    slideNumber: true
+    transition: fade
 
 
-
+report.qmd:
+  format:
+    html: default
+    pdf: default
